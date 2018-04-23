@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataConnections>
+    <OlapDataConnection Name="AdventureWorksConnection" ConnectionString="provider=msolap;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
+  </DataConnections>
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Data Source 1">
+      <OlapDataProvider DataConnection="AdventureWorksConnection" />
+    </DataSource>
+  </DataSources>
+  <Items>
+    <Card ComponentName="cardDashboardItem1" Name="Cards 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="[Measures].[Sales Amount]" Name="DataItem0">
+          <NumericFormat FormatType="Currency" IncludeGroupSeparator="true" />
+        </Measure>
+        <Dimension DataMember="[Date].[Calendar Quarter of Year].[Calendar Quarter of Year]" Name="DataItem2" />
+        <Dimension DataMember="[Date].[Calendar Year].[Calendar Year]" Name="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem1" />
+        <SeriesDimension Name="DataItem2" />
+      </SeriesDimensions>
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <Card>
+        <ActualValue Name="DataItem0" />
+      </Card>
+    </Card>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="[Measures].[Sales Amount]" Name="DataItem0">
+          <NumericFormat FormatType="Currency" IncludeGroupSeparator="true" />
+        </Measure>
+        <Dimension DataMember="[Product].[Product].[Product]" Name="DataItem2" />
+      </DataItems>
+      <Arguments>
+        <Argument Name="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value Name="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem Weight="34.0522133938706" DashboardItem="cardDashboardItem1" />
+      <LayoutItem Weight="65.9477866061294" DashboardItem="chartDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
