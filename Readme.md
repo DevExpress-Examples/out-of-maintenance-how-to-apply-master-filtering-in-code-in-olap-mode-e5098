@@ -3,13 +3,15 @@
 
 * [Form1.cs](./CS/Dashboard_SetMasterFilter_OLAP/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_SetMasterFilter_OLAP/Form1.vb))
 <!-- default file list end -->
-# How to apply master filtering in code in OLAP mode
+# How to: Apply Master Filter in OLAP Mode
 
 
-<p>The following example demonstrates how to apply filtering for dashboard items that act as a master filter in <a href="http://documentation.devexpress.com/#Dashboard/CustomDocument15707">OLAP</a> mode.</p>
-<br />
-<p>In this example, the <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_SetMasterFiltertopic">SetMasterFilter</a> method is used to select the required cards in the <a href="http://documentation.devexpress.com/#Dashboard/CustomDocument15263">Card</a> dashboard item. Note that unique names of OLAP members are used instead of values.</p>
+Tihs example demonstrates how to specify the dashboard item selection as  master filter at runtime. 
 
-<br/>
+The dashboard is bound to an [OLAP data source](https://docs.devexpress.com/Dashboard/15707). The [Card](https://docs.devexpress.com/Dashboard/15263) dashboard item acts as master filter item.
+
+The [DashboardViewer.SetMasterFilter](https://docs.devexpress.com/Dashboard/devexpress.dashboardwin.dashboardviewer.setmasterfilter.overloads) sets the data in selected cards as the master filter. Note that the filter  uses unique OLAP member names instead of values.
+
+![](/images/screenshot.png)
 
 

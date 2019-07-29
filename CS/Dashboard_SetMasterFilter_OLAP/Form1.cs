@@ -3,7 +3,8 @@ using System.Windows.Forms;
 using System.Collections;
 
 namespace Dashboard_SetMasterFilter_OLAP {
-    public partial class Form1 : Form {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    {
         public Form1() {
             InitializeComponent();
             // Loads a dashboard from an XML file.
