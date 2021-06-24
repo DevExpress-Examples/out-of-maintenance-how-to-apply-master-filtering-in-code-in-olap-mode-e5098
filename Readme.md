@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_SetMasterFilter_OLAP/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_SetMasterFilter_OLAP/Form1.vb))
 <!-- default file list end -->
-# How to: Apply Master Filter in OLAP Mode
+# Dashboard for WinForms - How to apply Master Filter in OLAP Mode
 
 
 Tihs example demonstrates how to specify the dashboard item selection as  master filter at runtime. 
