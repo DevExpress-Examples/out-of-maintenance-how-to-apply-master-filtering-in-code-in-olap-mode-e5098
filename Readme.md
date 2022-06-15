@@ -16,7 +16,7 @@ The [DashboardViewer.SetMasterFilter](https://docs.devexpress.com/Dashboard/deve
 ![](/images/screenshot.png)
 
 
-# Files to Look At*
+# Files to Look At
 
 * [Form1.cs](./CS/Dashboard_SetMasterFilter_OLAP/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_SetMasterFilter_OLAP/Form1.vb))
 
