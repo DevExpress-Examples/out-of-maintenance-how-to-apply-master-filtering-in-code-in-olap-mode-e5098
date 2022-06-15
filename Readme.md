@@ -11,7 +11,7 @@
 # Dashboard for WinForms - How to apply Master Filter in OLAP Mode
 
 
-Tihs example demonstrates how to specify the dashboard item selection as  master filter at runtime. 
+This example demonstrates how to specify the dashboard item selection as  master filter at runtime. 
 
 The dashboard is bound to an [OLAP data source](https://docs.devexpress.com/Dashboard/15707). The [Card](https://docs.devexpress.com/Dashboard/15263) dashboard item acts as master filter item.
 
